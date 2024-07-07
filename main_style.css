@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(220, 243, 236);
+}
+
+.hamburger {
+display: flex;
+flex-direction: column;
+width: 30px;
+height: 20px;
+cursor: pointer;
+} 
+
+.line1,.line2,.line3{
+background-color: aliceblue;
+width: 100%;
+height: 5px;
+margin: 2px;
+transition: 0.5s;
+
+}
+
+.change .line1{
+transform: translate(0,11px) rotate(-45deg);
+}
+
+.change .line3{    
+transform: translate(0,-11px) rotate(45deg);
+}
+
+.change .line2{
+opacity: 0;
+}
+
+.main{
+width: 300px;
+height: 100vh;
+background-color: rgb(89, 77, 77);
+display: none;
+}
+
+ul li{
+font-size: 15px;
+margin-left: 10px;
+}
+
+span:nth-child(1){
+font-size: 40px;
+text-shadow: 3px 2px rgb(249, 121, 121);
+}
+
+#button{
+margin-left: 900px;
+}
+
+@media(max-width:500px)
+{
+#button{
+margin-left: 50px;
+}
+span:nth-child(1){
+font-size: 30px;
+}
+}
+
+@media(max-width:380px)
+{
+#button{
+margin-left: 50px;
+}
+span:nth-child(1){
+font-size: 25px;
+}
+}
+
+@media(max-width:900px) and (min-width:800px)
+{
+#button{
+margin-left: 400px;
+}
+span:nth-child(1){
+font-size: 40px;
+}
+}
+
+.container-1{
+display: flex;
+}
+
+p:nth-child(1)
+{
+font-size: 60px;
+margin-left: 150px;
+font-style:oblique;
+}
+
+p:nth-child(2)
+{
+font-size: 30px;
+margin-left: 150px;
+color: rgb(17, 18, 17);
+}
+
+@media(max-width:500px)
+{
+p:nth-child(1)
+{
+font-size: 30px;
+margin-left: 40px;
+font-style:oblique;
+}
+
+p:nth-child(2)
+{
+font-size: 15px;
+margin-left: 40px;
+/* font-style:oblique; */
+}
+
+}
